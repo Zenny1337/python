@@ -1,0 +1,23 @@
+my_dict = {'key1': '0101101', 'key2': '101110' , 'key4': '110010' , 'key5': '101010' , 'key3': '1A14C' }
+del my_dict['key3']
+print(my_dict)
+#2
+s1 = {'</>':13, 'script':1, '__init__':10, 'self':5, 'number_9':6, '#comment':100}
+print('Исходный словарь:')
+key = input('Введите ключ:')
+value = input('Ведите значение:')
+s1[key] = value
+print('Новый словрь')
+print(s1)
+#3
+s1 = {}
+while len(s1) != 3:
+    kry = int(input('Введите числовой ключ:'))
+    value = input('Введите значение:')
+    s1[key] = value
+print(s1)
+#4
+all_d = {1:15, 4:80, 44:0, 256:15, 100:70, 101:70, 20:44, 3:9}
+all_d.pop(1,None)
+all_d.pop(101, None)
+all_d.pop(3, None)
