@@ -1,0 +1,57 @@
+try:
+    number = int(input("Введите целое число: "))
+
+    if number < 0:
+        print(f"Результат: {abs(number)}")
+    elif number == 0:
+        print(f"Результат: 1")
+    else:
+        print(f"Результат: {number}")
+
+except ValueError:
+    print("Ошибка: Введено неверное значение. Пожалуйста, введите целое число.")
+
+#2
+
+target_chars = ['.', ',']
+
+
+user_string = input("Введите строку: ")
+
+
+is_found = False
+
+
+for char in user_string:
+    if char in target_chars:
+        is_found = True
+        break 
+
+print(is_found)
+
+#3
+num1 = int(input("Введите первое целое число: "))
+num2 = int(input("Введите второе целое число: "))
+if num1 % 3 == 0 and num2 % 3 == 0:
+    print(True)
+elif (num1 % 3 == 0 and num2 % 3 != 0) or (num1 % 3 != 0 and num2 % 3 == 0):
+    print("Одно число делится на 3")
+else:
+    print(False)
+
+#4
+number = int(input("Введите число: "))
+if number < 0:
+    pass  
+elif number > 100:
+    print("*")
+else:
+    
+    print("*" * number)
+#5
+string1 = input("Введите первую строку: ")
+string2 = input("Введите вторую строку: ")
+if string1 == string2:
+    print(True)
+else:
+    print(False)
